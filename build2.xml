@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<project name="AntWarFileExample" default="clean">
+ 
+   
+     
+<target name="clean">
+  <exec executable="cmd">
+    <arg value="/c"/>
+    <arg value="E:/svnbackup.bat"/>
+    <arg value="-p"/>
+  </exec>
+</target>
+
+	   
+</project>

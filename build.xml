@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+<project name="AntWarFileExample" default="clean">
+ 
+   
+     
+    <target name="clean" depends="test">
+       <unwar src="dist/MyWebApplication.war" dest="test"/>
+
+	   </target>
+
+    <target name="test">
+       <unwar src="dist/MyWebApplication.war" dest="test"/>
+
+	   </target>
+
+	   
+</project>
