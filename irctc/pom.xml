@@ -83,56 +83,6 @@
     </pluginManagement>
   </build>
   
-  <!-- Profile configuration -->
-<profiles>
-    <!-- The configuration of the development profile -->
-    <profile>
-        <id>dev</id>
-        <!-- The development profile is active by default -->
-        <activation>
-            <activeByDefault>true</activeByDefault>
-        </activation>
-        <properties>
-           
-            <commons.version>1.10</commons.version>
-        </properties>
-    </profile>
-    <!-- The configuration of the production profile -->
-    <profile>
-        <id>prod</id>
-		<plugins>
-        <plugin>
-          <artifactId>maven-clean-plugin</artifactId>
-          <version>3.0.0</version>
-        </plugin>
-		</plugins>
-		<dependencies>
-		 <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-	<version>${commons.version}</version>
-    </dependency>
-		<dependencies>
-        <properties>
-            
-                        <commons.version>1.9</commons.version>
-        </properties>
-    </profile>
-    <!-- The configuration of the testing profile -->
-    <profile>
-        <id>test</id>
-		 <dependency>
-      <groupId>commons-codec</groupId>
-      <artifactId>commons-codec</artifactId>
-	<version>${commons.version}</version>
-    </dependency>
-		
-        <properties>
-           
-                        <commons.version>1.7</commons.version>
-        </properties>
-    </profile>
-</profiles>
   
   
  <distributionManagement>
