@@ -11,7 +11,7 @@
   <relativePath>../pom.xml</relativePath>
   
   </parent>
-
+ <groupId>in.co.irctc.www</groupId>
   <artifactId>irctc</artifactId>
   <version>1.3-SNAPSHOT</version>
 
